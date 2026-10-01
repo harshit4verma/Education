@@ -274,35 +274,46 @@ export default function App() {
 
       {/* Footer */}
       <footer className="mt-20 border-t border-slate-200 bg-white py-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-slate-500">
-          <div className="flex items-center gap-3">
-            <GraduationCap className="w-5 h-5 text-indigo-600" />
-            <span className="font-bold text-slate-700">NCERT AnimAcademy CBSE Class 6–10</span>
-            <span>• Built for animated conceptual clarity and AI diagnostic mistake remediation</span>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-slate-500">
+            <div className="flex items-center gap-3">
+              <GraduationCap className="w-5 h-5 text-indigo-600" />
+              <span className="font-bold text-slate-700">NCERT AnimAcademy CBSE Class 6–10</span>
+              <span>• Built for animated conceptual clarity and AI diagnostic mistake remediation</span>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <button
+                onClick={() => setIsDemoModalOpen(true)}
+                className="text-slate-500 hover:text-indigo-600 transition-colors"
+              >
+                How AI Observer Works
+              </button>
+              <span>•</span>
+              <button
+                onClick={() => setCurrentView('teacher')}
+                className="text-indigo-600 hover:text-indigo-700 font-bold transition-colors flex items-center gap-1"
+              >
+                <Users className="w-3.5 h-3.5" />
+                <span>Teacher / Admin Portal</span>
+              </button>
+              <span>•</span>
+              <button
+                onClick={() => setIsExamModalOpen(true)}
+                className="text-amber-600 hover:text-amber-700 font-bold transition-colors"
+              >
+                Weekly Exam Arena
+              </button>
+            </div>
           </div>
 
-          <div className="flex items-center gap-4">
-            <button
-              onClick={() => setIsDemoModalOpen(true)}
-              className="text-slate-500 hover:text-indigo-600 transition-colors"
-            >
-              How AI Observer Works
-            </button>
-            <span>•</span>
-            <button
-              onClick={() => setCurrentView('teacher')}
-              className="text-indigo-600 hover:text-indigo-700 font-bold transition-colors flex items-center gap-1"
-            >
-              <Users className="w-3.5 h-3.5" />
-              <span>Teacher / Admin Portal</span>
-            </button>
-            <span>•</span>
-            <button
-              onClick={() => setIsExamModalOpen(true)}
-              className="text-amber-600 hover:text-amber-700 font-bold transition-colors"
-            >
-              Weekly Exam Arena
-            </button>
+          <div className="border-t border-slate-100 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+            <p className="font-semibold text-slate-600">
+              © 2026 Harshit Verma. All Rights Reserved.
+            </p>
+            <p className="text-[11px] text-slate-400">
+              Official CBSE Curriculum & NCERT Textbooks • Empowering students through visual animation & AI diagnosis
+            </p>
           </div>
         </div>
       </footer>

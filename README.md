@@ -87,3 +87,11 @@ To create a production build:
 ```bash
 npm run build
 ```
+
+---
+
+## 📄 Copyright & License
+
+Copyright © 2026 Harshit Verma. All Rights Reserved.  
+Licensed under the [MIT License](LICENSE).
+

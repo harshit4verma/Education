@@ -713,6 +713,19 @@ export default function TeacherAdminDashboard({ onBackToStudentView, onOpenVideo
           </div>
         </div>
       )}
+
+      {/* Footer */}
+      <footer className="mt-16 border-t border-slate-200 bg-white py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+          <div className="flex items-center gap-2">
+            <GraduationCap className="w-4 h-4 text-indigo-600" />
+            <span className="font-bold text-slate-700">NCERT AnimAcademy Teacher & Admin Command Portal</span>
+          </div>
+          <p className="font-semibold text-slate-600">
+            © 2026 Harshit Verma. All Rights Reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
